@@ -22,7 +22,7 @@ async function getNews(keyword){
                 date:$(e).find('span').text(),
                 tag:$(e).find('.immtag').text(),
                 title:$(e).find('p').text(),
-                lnik:'http://news.ltn.com.tw/'+$(e).find('.tit').attr('href')
+                link:'http://news.ltn.com.tw/'+$(e).find('.tit').attr('href')
             })
         })
         return news
